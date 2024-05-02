@@ -16,6 +16,14 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 public class SpringConfig {
 	@Autowired
 	private Environment env; 
+	
+	/**
+	 * компонент источника данных,
+	 * создается объект класса источника данных DriverManagerDataSource с указанными 
+	 * в файле application.properties данными об используемой БД (драйвер, url, username, password)   
+	 * 
+	 * @return DataSource объект источника данных
+	 */
 	@Bean
 	DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -25,6 +33,7 @@ public class SpringConfig {
 		dataSource.setPassword(env.getProperty("dataSource.password"));
 		return dataSource;
 	}
+	
 	
 	@Bean 
 	public JewelDao jewelDao() {

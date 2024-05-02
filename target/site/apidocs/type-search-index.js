@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ru.myApp","l":"Jewel"},{"p":"ru.myApp","l":"JewelDao"},{"p":"ru.myApp","l":"Runner"},{"p":"ru.myApp","l":"SpringConfig"}];updateSearchResults();
