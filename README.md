@@ -25,8 +25,8 @@
  
  1. Скачать архив проекта
  2. Развернуть базу данных из дампа test_db.sql в вашем кластере PostgreSQL:
-  psql -f test_db.sql -U postgres <\br>
-  psql -d test_db -U postgres
+  - psql -f test_db.sql -U postgres  
+  - psql -d test_db -U postgres
  3. Чтобы ознакомиться с содержанием таблицы, можно выполнить следующие команды:  SELECT * FROM jewel;
  4. Зайти в директорию, содержащую файл pom.xml
  5. Открыть терминал в данной директории и выполнить команду mvn clean install spring-boot:repackage
